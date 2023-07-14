@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #212121;
+}
+.bg {
+  background-image: repeating-linear-gradient(90deg, #fff, #fff 2px, transparent 2px, transparent 82px),
+    repeating-linear-gradient(0deg, #fff, #fff 2px, #000 2px, #000 82px);
+}
+.content {
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom {
+  height: 4000px;
+}
+.content__title {
+  font-family: "OTF® Glusp", Arial, sans-serif;
+  text-transform: uppercase;
+  z-index: 10000;
+  font-size: 4vw;
+}
+
+.content__img {
+  max-width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+@media screen and (min-width: 50em) {
+  /* body {
+    overflow: hidden;
+  } */
+  .content {
+    height: 1000px;
+    overflow: hidden;
+  }
+}
